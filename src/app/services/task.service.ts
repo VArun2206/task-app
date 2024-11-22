@@ -6,32 +6,32 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class TaskService {
-  apiURL = environment.apiURL;
+  apiUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
 
   getTasks() {
-    let url = `${this.apiURL}/todos`;
+    let url = `${this.apiUrl}/tasks`;
     return this.http.get(url);
   }
 
   addTask(task: any) {
-    let url = `${this.apiURL}/todos`;
+    let url = `${this.apiUrl}/tasks`;
     return this.http.post(url, task);
   }
 
   updateTask(id: string, task: any) {
-    let url = `${this.apiURL}/todos/${id}`;
+    let url = `${this.apiUrl}/tasks/${id}`;
     return this.http.patch(url, task);
   }
 
   deleteTask(id: string) {
-    let url = `${this.apiURL}/todos/${id}`;
+    let url = `${this.apiUrl}/tasks/${id}`;
     return this.http.delete(url);
   }
 
   getTask(id: string) {
-    let url = `${this.apiURL}/todos/${id}`;
+    let url = `${this.apiUrl}/tasks/${id}`;
     return this.http.get(url);
   }
 }

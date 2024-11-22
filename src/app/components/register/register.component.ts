@@ -41,7 +41,17 @@ export class RegisterComponent implements OnInit {
     this.registerForm = this.fbr.group({
       name: [null, [Validators.required, Validators.minLength(4)]],
       email: [null, [Validators.required, Validators.email]],
-      password: [null, [Validators.required, Validators.minLength(8)]],
+      password: [
+        null,
+        [
+          Validators.required,
+          Validators.minLength(8),
+          Validators.maxLength(16),
+          Validators.pattern(
+            '^(?=.[a-z])(?=.[A-Z])(?=.d)(?=.[@$!%?&])[A-Za-zd@$!%?&]'
+          ),
+        ],
+      ],
     });
   }
 

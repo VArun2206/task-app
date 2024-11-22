@@ -61,11 +61,15 @@
           style="padding: 2%; font-size: large"
           formControlName="password"
         />
-        @if(password.errors && (password.touched || password.dirty)){<span
-          class="text-danger"
-          >Password is required</span
-        >
-        }
+        @if((password.touched || password.dirty)){@if(password.errors &&
+        password.errors['required']){
+        <span class="text-danger">Password is required </span>
+        } @if(password.errors && password.errors['pattern']){
+        <span class="text-danger"
+          >Password is must contains 1 uppercase , 1 lowercase ,1 digit and 1
+          special character
+        </span>
+        } }
       </section>
 
       <button

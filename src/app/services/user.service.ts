@@ -9,20 +9,20 @@ import { environment } from '../../environments/environment.development';
 export class UserService {
   user = signal<any | null>(null);
 
-  apiURL = environment.apiURL;
+  apiUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) {
     this.user.set(this.getUserFromLocalStorage());
   }
 
   getUsers() {
-    let url = `${this.apiURL}/users`;
+    let url = `${this.apiUrl}/users`;
     const res = this.http.get(url);
     return firstValueFrom(res);
   }
 
   addUser(user: any) {
-    let url = `${this.apiURL}/users`;
+    let url = `${this.apiUrl}/users`;
     return firstValueFrom(this.http.post(url, user));
   }
 
