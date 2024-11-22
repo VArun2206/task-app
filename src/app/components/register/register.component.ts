@@ -62,7 +62,7 @@ export class RegisterComponent implements OnInit {
       .then((res: any) => {
         console.log(res);
         if (res._id) {
-          this.toastr.success('Registeration SUccessfull!');
+          this.toastr.success('Registeration Successfull!');
           return this.router.navigateByUrl('/login');
         } else {
           this.toastr.error(res.message);
