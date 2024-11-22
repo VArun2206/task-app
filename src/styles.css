@@ -1,0 +1,11 @@
+@import url("https://kalees64.github.io/vk-cdn/vk-cdn.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
