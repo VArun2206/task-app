@@ -48,9 +48,7 @@ export class LoginComponent implements OnInit {
         console.log(res);
         let user: any = res.find((value: any) => {
           console.log(value);
-
           console.log(this.loginForm.value);
-
           if (
             value.email === this.loginForm.value.email &&
             value.password === this.loginForm.value.password
