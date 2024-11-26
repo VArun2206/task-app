@@ -1,0 +1,15 @@
+h2 {
+  text-align: center;
+  color: #26a094;
+}
+
+label {
+  color: #26a094;
+}
+
+button {
+  background-color: #ff9f1c;
+  width: 30%;
+  color: white;
+  font-weight: 500;
+}

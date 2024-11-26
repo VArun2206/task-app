@@ -1,0 +1,13 @@
+.btn {
+  color: #26a094;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn:hover {
+  border-bottom: 2px solid #26a094;
+}
+
+.vk-h3 {
+  color: #26a094;
+}

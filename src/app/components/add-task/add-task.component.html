@@ -7,12 +7,12 @@
       (submit)="onSubmit()"
       class="px-2 grid gap-4 max-lg:pt-6"
     >
-      <h2 style="text-align: center" class="text-white vk-h3 pb-6 max-lg:pb-3">
+      <h2 style="text-align: center" class="vk-h3 pb-6 max-lg:pb-3">
         Add a new Task
       </h2>
 
       <section style="display: grid">
-        <label class="text-white" for="title">Title : </label>
+        <label class="text-xl font-semibold" for="title">Title : </label>
         <input
           class="form-control {{
             title.touched && title.errors
@@ -30,7 +30,9 @@
       </section>
 
       <section style="display: grid">
-        <label class="text-white" for="description">Description : </label>
+        <label class="text-xl font-semibold" for="description"
+          >Description :
+        </label>
         <textarea
           class="form-control {{
             description.touched && description.errors
@@ -51,7 +53,7 @@
       </section>
 
       <button
-        class="btn bg-blue-900 text-white"
+        class="btn"
         type="submit"
         style="width: 20%"
         [disabled]="addTask.invalid"
@@ -61,7 +63,7 @@
     </form>
 
     <section>
-      <img class="rounded" src="images/add-tasks.png" alt="" />
+      <img class="rounded" src="images/add-y.png" alt="" />
     </section>
   </div>
 </section>

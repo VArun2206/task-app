@@ -3,7 +3,7 @@
     class="grid grid-cols-2 gap-3 max-lg:grid-cols-1 max-lg:pb-5 px-3 items-center"
   >
     <section>
-      <img class="rounded" src="images/user-login.png" alt="" />
+      <img class="rounded" src="images/login-y.png" alt="" />
     </section>
 
     <form
@@ -11,11 +11,9 @@
       (submit)="onSubmit()"
       class="px-2 grid gap-4 max-lg:pt-6"
     >
-      <h2 class="text-white vk-h3 pb-6 max-lg:pb-3" style="text-align: center">
-        Login
-      </h2>
+      <h2 class="vk-h3 pb-6 max-lg:pb-3">Login</h2>
       <section style="display: grid">
-        <label class="text-white" for="email">Email : </label>
+        <label class="text-xl font-semibold" for="email">Email : </label>
         <input
           class="form-control {{
             userEmail.touched && userEmail.errors
@@ -33,7 +31,7 @@
       </section>
 
       <section style="display: grid">
-        <label class="text-white" for="password">Password : </label>
+        <label class="text-xl font-semibold" for="password">Password : </label>
         <input
           class="form-control {{
             userPassword.touched && userPassword.errors
@@ -53,12 +51,7 @@
         }
       </section>
 
-      <button
-        class="btn bg-blue-900 text-white"
-        type="submit"
-        style="width: 30%"
-        [disabled]="loginForm.invalid"
-      >
+      <button class="btn" type="submit" [disabled]="loginForm.invalid">
         Login
       </button>
     </form>

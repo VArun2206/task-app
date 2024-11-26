@@ -1,15 +1,11 @@
 @if(task){
-<section class="container">
-  <h1 class="vk-h2 text-center py-3 text-white">{{ task.title }}</h1>
+<section class="container w-full bg-white pb-2 rounded-xl">
+  <h1 class="vk-h3 text-center py-3">{{ task.title }}</h1>
   <hr />
-  <h3 class="text-xl py-2 text-white" style="text-indent: 10%">
+  <h3 class="text-2xl py-2" style="text-indent: 10%">
     {{ task.description }}
   </h3>
-  <button
-    class="btn bg-blue-900 text-white"
-    routerLink="/edit-task/{{ task._id }}"
-  >
-    Edit Task
-  </button>
+  <br /><br />
+  <button class="btn" routerLink="/edit-task/{{ task._id }}">Edit Task</button>
 </section>
 }

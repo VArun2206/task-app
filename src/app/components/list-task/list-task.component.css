@@ -1,0 +1,31 @@
+.vk-btn,
+.btn {
+  background-color: #ff9f1c;
+  font-weight: 500;
+  color: white;
+}
+
+.vk-btn:hover,
+.btn:hover {
+  background-color: #ffbf69;
+  color: black;
+}
+
+h2,
+th,
+tr {
+  color: #26a094;
+}
+
+.row1:hover {
+  background-color: white;
+}
+
+td {
+  font-weight: 500;
+}
+
+table {
+  background-color: rgb(230, 255, 253);
+  border-radius: 2%;
+}
