@@ -11,6 +11,7 @@ Application URL: [Task App](https://todo-app-ashy-phi.vercel.app)
 5. Delete Task
 6. View All Task list
 7. View Task
+![Screenshot (265)](https://github.com/user-attachments/assets/85a92d6d-6bb6-42d4-9451-9796acad122b)
 
 ## Primary Colors
 
